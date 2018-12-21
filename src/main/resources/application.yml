@@ -1,0 +1,27 @@
+aws:
+  #endpointUrl: https://s3labobos.orange-labs.fr
+  endpointUrl:  http://cephos.orange-labs.fr
+  #accessKey: D9CC0RZB8GTLTMK74M4D
+  accessKey: ZO1HFOW1NNY0ESLEX9N0
+  bucketName: dummynomad
+  # with proxy is boolean (true/false)
+  withProxy: false
+  # IP/host of proxy
+  proxyHost: 10.115.64.109
+  # Proxy port (integer)
+  proxyPort: 8080
+  proxyUsername: 
+  proxyPassword: 
+  
+## MULTIPART (MultipartProperties)
+spring:
+    servlet:
+        multipart:
+            # Enable multipart uploads
+            enabled: true
+            # Threshold after which files are written to disk.
+            file-size-threshold: 2KB
+            # Max file size.
+            max-file-size: 200MB
+            # Max Request Size
+            max-request-size: 215MB
